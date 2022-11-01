@@ -17,7 +17,7 @@ class TraceGenerator():
         self.read_popularity_sz_dst()
         self.curr_iter = 0
         self.printBox = printBox
-        self.mixing_time = 100*MIL*0
+        self.mixing_time = 100*MIL
         
 
     ## Generate a synthetic trace
@@ -35,9 +35,6 @@ class TraceGenerator():
 
         self.MAX_SD = pfd.sd_keys[-1]
 
-        print(self.MAX_SD)
-
-        
         ## sample 70 million objects
         print("Sampling the object sizes that will be assigned to the initial objects in the LRU stack ...")
 

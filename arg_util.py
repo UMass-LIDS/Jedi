@@ -28,7 +28,16 @@ def show_available_fds():
         tc = l[1]
         print(tc)
     return availableTcs
-    
+
+
+def create_empty_dirs():
+    if not os.path.exists("./OUTPUT/"):            
+        os.mkdir("./OUTPUT/")
+    if not os.path.exists("./tmp/"):            
+        os.mkdir("./tmp/")
+
+            
+
 
 def show_example():
     print("Here's an example command : python3 tragen_cli.py -c <config_file> -d <output_directory>")

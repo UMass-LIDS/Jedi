@@ -13,7 +13,7 @@ The github link for our prior work can be found in [TRAGEN](https://github.com/U
 1. Install [python3](https://www.python.org/downloads/).
 
 2. Install the following packages - numpy, scipy, pyQt5 and datetime.
-   * ``` pip3 install numpy, scipy, pyQt5, datetime, matplotlib ```
+   * ``` pip3 install numpy scipy pyQt5 datetime matplotlib pathos```
 
 ## 2. Use JEDI to generate synthetic traces
 

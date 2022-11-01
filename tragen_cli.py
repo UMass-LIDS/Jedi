@@ -7,7 +7,7 @@ if __name__ == "__main__":
 
     ## get arguments for TRAGEN
     parser = define_arguments()
-    params = parser.parse_args()
+    params = parser.parse_args()    
     
     ## print available footprint descriptors and their default traffic volume
     if params.available_fds == True:
@@ -19,7 +19,10 @@ if __name__ == "__main__":
 
     ## Read the config  file
     args   = read_config_file(params.config_file)
-        
+
+    ## Create the empty directories used during runtime
+    create_empty_dirs()
+    
     ## generate representive footprint descriptor and object weight vector
     ## for the specified traffic mix.
     trafficMixer = TrafficMixer(args)
