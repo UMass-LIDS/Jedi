@@ -1,0 +1,10 @@
+{
+    "Trace_length": "200000000",
+    "Input_unit" : "reqs/s",
+    "Traffic_classes" : [
+        {
+            "traffic_class": "v",
+            "traffic_volume": "1000"
+        }
+    ]
+}
