@@ -31,8 +31,8 @@ class PFD():
         self.end_tm       = int(l[3])
         self.requests_miss = int(l[4])
         self.bytes_miss    = float(l[5])
-        self.req_rate     = self.no_reqs#/(self.end_tm - self.start_tm)
-        self.byte_rate    = self.total_bytes#/(self.end_tm - self.start_tm)
+        self.req_rate     = self.no_reqs/(self.end_tm - self.start_tm)
+        self.byte_rate    = self.total_bytes/(self.end_tm - self.start_tm)
 
         print("sd_gran : ", sd_gran)
         
