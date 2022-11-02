@@ -66,7 +66,7 @@ Run the following command in the home directory of TRAGEN to display the GUI.
 
 Below is a screenshot of the GUI. 
 
-![GUI](images/jedi.jpg = 200x300)
+![GUI](images/jedi.jpg)
 
 1. **Enter trace length**. Specify the number of requests in the synthetic trace.
 2. **Select traffic volume unit**. Select if the traffic volume field in the third column of the table will be input as requests/second or Gigabits per second (Gbps).
