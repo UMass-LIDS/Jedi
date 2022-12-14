@@ -4,7 +4,7 @@ JEDI is an extension of our prior tool [TRAGEN](https://groups.cs.umass.edu/rame
 
 More detailed information about JEDI can be found in the [paper at this link](https://groups.cs.umass.edu/ramesh/wp-content/uploads/sites/3/2022/11/JEDI.pdf). Please use the full citation information below when using JEDI in your work.
 
-[JEDI: model-driven trace generation for cache simulations](https://groups.cs.umass.edu/ramesh/wp-content/uploads/sites/3/2021/10/imc2021-final270.pdf), by Anirudh Sabnis and Ramesh K. Sitaraman, ACM Internet Measurement Conference (IMC), October 2022.
+[JEDI: model-driven trace generation for cache simulations](https://groups.cs.umass.edu/ramesh/wp-content/uploads/sites/3/2022/11/JEDI.pdf), by Anirudh Sabnis and Ramesh K. Sitaraman, ACM Internet Measurement Conference (IMC), October 2022.
 
 The github link for our prior work can be found in [TRAGEN](https://github.com/UMass-LIDS/Tragen) [[2]](#2). 
 
