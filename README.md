@@ -145,7 +145,7 @@ The currently available traffic models are:
 Sundarrajan, Aditya, Mingdong Feng, Mangesh Kasbekar, and Ramesh K. Sitaraman. "[Footprint descriptors: Theory and practice of cache provisioning in a global cdn](https://groups.cs.umass.edu/ramesh/wp-content/uploads/sites/3/2019/12/Footprint-Descriptors-Theory-and-Practice-of-Cache-Provisioning-in-a-Global-CDN.pdf)." In Proceedings of the 13th International Conference on emerging Networking EXperiments and Technologies, pp. 55-67. 2017.
 
 <a id="1">[2]</a> 
-Anirudh Sabnis, Ramnesh K. Sitaraman. "[TRAGEN: A Synthetic Trace Generator for Realistic Cache Simulations](https://groups.cs.umass.edu/ramesh/wp-content/uploads/sites/3/2019/12/Footprint-Descriptors-Theory-and-Practice-of-Cache-Provisioning-in-a-Global-CDN.pdf)." In Proceedings of the 21st ACM Internet Measurement ConferenceNovember 2021 Pages 366–379.
+Anirudh Sabnis, Ramesh K. Sitaraman. "[TRAGEN: A Synthetic Trace Generator for Realistic Cache Simulations](https://groups.cs.umass.edu/ramesh/wp-content/uploads/sites/3/2019/12/Footprint-Descriptors-Theory-and-Practice-of-Cache-Provisioning-in-a-Global-CDN.pdf)." In Proceedings of the 21st ACM Internet Measurement ConferenceNovember 2021 Pages 366–379.
 
 ## 7. Acknowledgements
 This work was supported in part by NSF grants CNS-1763617, CNS-1901137, and CNS-2106463.
