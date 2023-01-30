@@ -173,8 +173,9 @@ class TraceGenerator():
                 
             n = node(curr.obj_id, curr.s)
             n.set_b()
-            
-            c_trace.append(curr.obj_id)
+
+            if i > self.mixing_time:
+                c_trace.append(curr.obj_id)
             
             req_count[curr.obj_id] += 1
             obj_seen[curr.obj_id]   = 1
