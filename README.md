@@ -21,7 +21,7 @@ User can select a traffic model from the [available traffic models](#5-available
 
 1. Select a model that is described as *Mix* to generate a synthetic trace that is representative of the original trace obtained from a server that is serving a mix of traffic classes. 
 
-2. Or, select multiple traffic models and provide the required traffic volumes for each selected option to create a custom traffic mix. For e.g., 10Gbps of traffic from Amazon mixed with 5Gbps of traffic from Microsoft.
+2. Or, select multiple traffic models and provide the required traffic volumes for each selected option to create a custom traffic mix. For e.g., 10GBps of traffic from Amazon mixed with 5GBps of traffic from Microsoft.
 
 The user can use a [Command Line Interface](#21-command-line-interface) or the [GUI](#22-GUI).
 
@@ -52,7 +52,7 @@ The config file is to be in the json format. An example of a config file is:
 ```
 
 1. **Trace_length**. Specify the number of requests in the synthetic trace.
-2. **Input_unit**. Enter the unit with which the traffic volume for each traffic class will be specified - reqs/s or Gbps.
+2. **Input_unit**. Enter the unit with which the traffic volume for each traffic class will be specified - reqs/s or GBps.
 3. **Traffic_classes**. Create a custom traffic mix by providing a list of traffic classes and their respective traffic volumes. 
    * traffic_class should be one of the traffic classes specified in the [available traffic models](#5-available-traffic-models).
    * traffic_volume field specifies the traffic volume for the traffic class.
@@ -85,7 +85,7 @@ The produced synthetic trace is found in the directory ./OUTPUT/
 A traffic model is a five-tuple consisting of a popularity-size footprint descriptor. To generate traffic models for your own original traces provide the original trace in a file in the following format. Each request in the trace is comma seperated list of timestamp, object_id, and object_size (in Kb). Now, each request is on a new line. For example,
 
 ```
-timestamp, object_id, object_size (Kb)
+timestamp, object_id, object_size (KB)
 1532702631,0,26624
 1532702631,1,12288
 1532702631,2,26624
