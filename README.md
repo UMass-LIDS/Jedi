@@ -82,7 +82,7 @@ The produced synthetic trace is found in the directory ./OUTPUT/
 
 #### 3.1 Generate traffic models
 
-A traffic model is a five-tuple consisting of a popularity-size footprint descriptor. To generate traffic models for your own original traces provide the original trace in a file in the following format. Each request in the trace is comma seperated list of timestamp, object_id, and object_size (in Kb). Now, each request is on a new line. For example,
+A traffic model is a five-tuple consisting of a popularity-size footprint descriptor. To generate traffic models for your own original traces provide the original trace in a file in the following format. Each request in the trace is comma seperated list of timestamp, object_id, and object_size (in KB). Now, each request is on a new line. For example,
 
 ```
 timestamp, object_id, object_size (KB)
