@@ -97,16 +97,16 @@ timestamp, object_id, object_size (KB)
 ```
 
 Use the following command,
-   * ``` python3 traffic_modeler.py <path_to_original_trace> <output_dir>```
+   * ``` python3 popularity_traffic_modeler.py <path_to_original_trace> <output_dir>```
    
-The output_dir contains the popularity-size footprint descriptor (pfd.txt) and a joint popularity-size distribution (popularity_sz.txt).
+The output_dir contains the popularity-size footprint descriptor (pfd.txt) and a joint popularity-size distribution (popularity_sz.txt). Please note that in order to run successfully, the script requires that the total size of all the objects in the trace is at least 10 MB. If not, please edit line 117 of the popularity_traffic_modeler.py appropriately.
 
 #### 3.2. Submitting traffic models
 
 Consider adding your footprint descriptors to our repository. To do so,
 
 1. Create a directory FOOTPRINT_DESCRIPTOR/<your_traffic_class_name>.
-2. Copy the footprint descriptor (named as fd.txt) and joint popularity-size distribution (popularity_sz.txt) to FOOTPRINT_DESCRIPTOR/<your_traffic_class_name>/.
+2. Copy the footprint descriptor (named as pfd.txt.gz, gzip it) and joint popularity-size distribution (popularity_sz.txt) to FOOTPRINT_DESCRIPTOR/<your_traffic_class_name>/.
 3. Create an entry in [available traffic models](#5-available-traffic-models).
 4. Update the file FOOTPRINT_DESCRIPTOR/available_fds.txt
 
