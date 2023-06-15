@@ -14,8 +14,6 @@ def define_arguments():
     parser.add_argument('-x', '--example',   action='store_true',  help="an example")
 
     parser.add_argument('-c', '--config_file',   action='store',  help="enter the full path to a json config file, example can be found in OUTPUT/config.json")
-
-    parser.add_argument('-d', '--output_dir',   action='store',  help="enter path to output directory")
     
     return parser
 
@@ -41,7 +39,7 @@ def create_empty_dirs():
 
 
 def show_example():
-    print("Here's an example command : python3 tragen_cli.py -c <config_file> -d <output_directory>")
+    print("Here's an example command : python3 tragen_cli.py -c <config_file>")
 
     
 ## Fill the arguments as entered by the user.
@@ -49,8 +47,10 @@ class Arguments():
     def __init__(self):
         self.traffic_classes = ""
         self.traffic_ratio   = ""
+        self.req_rate        = 1000
         self.length          = 100000000
 
+        
 
 def convertToReqRate(traffic_class, traffic_volume):
     f = gzip.open("./FOOTPRINT_DESCRIPTORS/" + traffic_class + "/pfd.txt.gz", "rb")
@@ -96,6 +96,9 @@ def read_config_file(config_file):
                 
         traffic_ratio.append(traffic_volume)
 
+    total_req_rate = sum([float(x) for x in traffic_ratio])
+    args.req_rate = total_req_rate
+    
     args.traffic_classes = ":".join([str(x).lower() for x in traffic_classes])
     args.traffic_ratio   = ":".join([str(x) for x in traffic_ratio])
 

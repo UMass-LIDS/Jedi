@@ -5,10 +5,6 @@
         {
             "traffic_class": "v", 
             "traffic_volume": "1000"
-        },
-	{
-	    "traffic_class": "w", 
-            "traffic_volume": "1000"
         }
     ]
 }

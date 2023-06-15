@@ -1,0 +1,15 @@
+Generating synthetic trace : 10000
+Generating synthetic trace : 20000
+Generating synthetic trace : 30000
+Generating synthetic trace : 40000
+Generating synthetic trace : 50000
+Generating synthetic trace : 60000
+Generating synthetic trace : 70000
+Generating synthetic trace : 80000
+Generating synthetic trace : 90000
+Generating synthetic trace : 100000
+Generating synthetic trace : 110000
+Generating synthetic trace : 120000
+Generating synthetic trace : 130000
+Generating synthetic trace : 140000
+Generating synthetic trace : 150000

@@ -36,7 +36,7 @@ class TraceGenerator():
         self.MAX_SD = pfd.sd_keys[-1]
 
         ## sample 70 million objects
-        print("Sampling the object sizes that will be assigned to the initial objects in the LRU stack ...")
+        print("Sampling the object sizes that will be assigned to the initial objects in the LRU stack ... this will take a while, please go back to sleep")
 
         if self.printBox != None:
             self.printBox.setText("Sampling initial objects ...")
@@ -284,9 +284,9 @@ class TraceGenerator():
         with open("./OUTPUT/" + str(traffic_classes) + "/command.txt", 'w') as fp:
             fp.write('\n'.join(sys.argv[1:]))
             
-        ## Assign timestamp based on the byte-rate of the FD
-        self.assign_timestamps(c_trace, sizes, pfd.byte_rate, f)
-
+        ## Assign timestamp based on the specified request rate
+        self.assign_timestamps_reqrate(c_trace, sizes, self.args.req_rate, f)
+        
         ## We are done!
         if self.printBox != None:
             self.printBox.setText("Done! Ready again ...")
@@ -307,7 +307,16 @@ class TraceGenerator():
             if KB_added >= KB_rate:
                 timestamp += 1
                 KB_added = 0
-            
+
+    def assign_timestamps_reqrate(self, c_trace, sizes, req_rate, f):
+        timestamp = 1
+        i = 1
+        for c in c_trace:
+            f.write(str(timestamp) + "," + str(c) + "," + str(sizes[c]) + "\n")
+
+            if i%1000 == 0:
+                timestamp += 1
+            i += 1            
 
     ## Read object size distribution of the required traffic classes
     def read_obj_size_dst(self):
