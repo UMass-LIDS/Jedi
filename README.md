@@ -28,7 +28,7 @@ The user can use a [Command Line Interface](#21-command-line-interface) or the [
 ### 2.1. Command line interface
 
 Run the following command in the home directory of TRAGEN to operate in the CLI mode.
-   * ``` python3 tragen_cli.py -c <config_file> -d <output_directory> ```
+   * ``` python3 tragen_cli.py -c <config_file> ```
 
 #### 2.2.1. Config file
 
@@ -57,11 +57,11 @@ The config file is to be in the json format. An example of a config file is:
    * traffic_class should be one of the traffic classes specified in the [available traffic models](#5-available-traffic-models).
    * traffic_volume field specifies the traffic volume for the traffic class.
 
-The produced synthetic trace is in the specified <output_directory>.
+The produced synthetic trace is in a directory that is not surprisingly called ./OUTPUT.
 
 ### 2.2. GUI
 
-Run the following command in the home directory of TRAGEN to display the GUI.
+I hope you use the Command Line Interface. Run the following command in the home directory of TRAGEN to display the GUI.
    * ``` python3 tragen_gui.py ```
 
 Below is a screenshot of the GUI. 
