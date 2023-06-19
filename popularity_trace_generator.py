@@ -314,7 +314,7 @@ class TraceGenerator():
         for c in c_trace:
             f.write(str(timestamp) + "," + str(c) + "," + str(sizes[c]) + "\n")
 
-            if i%1000 == 0:
+            if (i)%(int(req_rate)) == 0:
                 timestamp += 1
             i += 1            
 
