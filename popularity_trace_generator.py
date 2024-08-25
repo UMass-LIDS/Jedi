@@ -17,7 +17,7 @@ class TraceGenerator():
         self.read_popularity_sz_dst()
         self.curr_iter = 0
         self.printBox = printBox
-        self.mixing_time = 100*MIL
+        self.mixing_time = 10*MIL
         
 
     ## Generate a synthetic trace
