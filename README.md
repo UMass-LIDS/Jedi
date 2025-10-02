@@ -144,26 +144,34 @@ We welcome users to suggest modifications to improve the quality of the code or 
 
 The currently available traffic models are:
 
-| |Traffic class|                        Description| Traffic type|
-|:-|:-:|:-------------------------------------------------------------|:--:|
-|1|V|Traffic collected from servers predominantly serving video traffic|Video|
-|2|W|Traffic collected from servers predominantly serving web traffic|Web|
-|3|EU|Traffic collected from a cluster of servers serving a mix of traffic|Mix|
-|4|TC|Traffic collected from a cluster of servers serving a mix of traffic|Mix|
-|5|EU-0|Subset of eu trace corresponding to media traffic|SocialMedia|
-|6|EU-1|Subset of eu trace corresponding to media traffic|SocialMedia|
-|7|EU-2|Subset of eu trace corresponding to media traffic|SocialMedia|
-|8|EU-3|Subset of eu trace corresponding to media traffic|SocialMedia|
-|9|EU-4|Subset of eu trace corresponding to media traffic|SocialMedia|
-|10|EU-5|Subset of eu trace corresponding to media traffic|SocialMedia|
-|11|EU-6|Subset of eu trace corresponding to media traffic|SocialMedia|
-|12|EU-7|Subset of eu trace corresponding to media traffic|Web|
-|13|EU-8|Subset of eu trace corresponding to media traffic|SocialMedia|
-|14|EU-9|Subset of eu trace corresponding to media traffic|Web|
-|15|TC-0|Subset of tc trace that corresponds to downloads|Download|
-|15|TC-1|Subset of tc trace that corresponds to images|Images|
-|16|TC-2|Subset of tc trace that corresponds to media|Media|
-|17|TC-3|Subset of tc trace that corresponds to web|Web|
+| |Traffic class|                        Description| Traffic type|Year Collected| Diurnal request rate|
+|:-|:-:|:-------------------------------------------------------------|:--:|:--:|:--:|
+|1|V|Traffic collected from servers predominantly serving video traffic|Video|2018|No|
+|2|W|Traffic collected from servers predominantly serving web traffic|Web|2015|No|
+|3|EU|Traffic collected from a cluster of servers serving a mix of traffic|Mix|2015|No|
+|4|TC|Traffic collected from a cluster of servers serving a mix of traffic|Mix|2018|No|
+|5|EU-0|Subset of eu trace corresponding to media traffic|SocialMedia|2015|No|
+|6|EU-1|Subset of eu trace corresponding to media traffic|SocialMedia|2015|No|
+|7|EU-2|Subset of eu trace corresponding to media traffic|SocialMedia|2015|No|
+|8|EU-3|Subset of eu trace corresponding to media traffic|SocialMedia|2015|No|
+|9|EU-4|Subset of eu trace corresponding to media traffic|SocialMedia|2015|No|
+|10|EU-5|Subset of eu trace corresponding to media traffic|SocialMedia|2015|No|
+|11|EU-6|Subset of eu trace corresponding to media traffic|SocialMedia|2015|No|
+|12|EU-7|Subset of eu trace corresponding to media traffic|Web|2015|No|
+|13|EU-8|Subset of eu trace corresponding to media traffic|SocialMedia|2015|No|
+|14|EU-9|Subset of eu trace corresponding to media traffic|Web|2015|No|
+|15|TC-0|Subset of tc trace that corresponds to downloads|Download|2015|No|
+|15|TC-1|Subset of tc trace that corresponds to images|Images|2015|No|
+|16|TC-2|Subset of tc trace that corresponds to media|Media|2015|No|
+|17|TC-3|Subset of tc trace that corresponds to web|Web|2015|No|
+|17|TC-3|Subset of tc trace that corresponds to web|Web|2015|No|
+|18|V-1|Traffic collected from servers in a major US metro predominantly serving video traffic|Video|2025|Yes|
+|19|V-2|Traffic collected from servers in a major EU metro predominantly serving video traffic|Video|2025|Yes|
+|20|W-1|Traffic collected from servers in a major US metro predominantly serving web traffic|Video|2025|Yes|
+|21|W-2|Traffic collected from servers in a major EU metro predominantly serving web traffic|Video|2025|Yes|
+|22|D-1|Traffic collected from servers in a major US metro predominantly serving download traffic|Video|2025|Yes|
+|23|D-2|Traffic collected from servers in a major EU metro predominantly serving download traffic|Video|2025|Yes|
+
 
 ## 7. References
 
