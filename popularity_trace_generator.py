@@ -283,17 +283,48 @@ class TraceGenerator():
 
         with open("./OUTPUT/" + str(traffic_classes) + "/command.txt", 'w') as fp:
             fp.write('\n'.join(sys.argv[1:]))
-            
+
+        # check if FOOTPRINT_DESCRIPTORS/traffic_classes[0]/req_rate.txt exists  
+        if len(self.trafficMixer.trafficClasses) == 1 and os.path.exists("./FOOTPRINT_DESCRIPTORS/" + str(traffic_classes) + "/req_rate.txt"):
+            self.assign_timestamps_realreqrate(c_trace, sizes, f)
+        else:
         ## Assign timestamp based on the specified request rate
-        self.assign_timestamps_reqrate(c_trace, sizes, self.args.req_rate, f)
+            self.assign_timestamps_reqrate(c_trace, sizes, self.args.req_rate, f)
         
         ## We are done!
         if self.printBox != None:
             self.printBox.setText("Done! Ready again ...")
         
         return curr, root
-                
-            
+
+    def assign_timestamps_realreqrate(self, c_trace, sizes, f):
+
+        ## This file specifies the request rate at five minute intervals
+        ## We will use this to assign timestamps to the generated trace
+        ## The timestamps will be in seconds
+        f = open("./FOOTPRINT_DESCRIPTORS/" + str(self.trafficMixer.trafficClasses[0]) + "/req_rate.txt", "r")
+        req_rates = []
+        for l in f:
+            req_rates.append(int(l.strip().split(", ")[1]))
+        f.close()
+
+        timestamp = 1
+        i = 0
+        j = 0
+        req_rate = req_rates[j]
+        requests_per_second = int(req_rate/300)
+        for c in c_trace:
+            f.write(str(timestamp) + "," + str(c) + "," + str(sizes[c]) + "\n")
+            i += 1
+            if i >= requests_per_second:
+                timestamp += 1
+                i = 0
+            if timestamp % 300 == 0:
+                j = (j + 1) % len(req_rates)
+                req_rate = req_rates[j]
+                requests_per_second = int(req_rate/300)
+
+    
     ## Assign timestamp based on the byte-rate of the FD
     def assign_timestamps(self, c_trace, sizes, byte_rate, f):
         timestamp = 0

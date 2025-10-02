@@ -16,3 +16,9 @@
 16,tc-2,subset of tc trace that corresponds to media,40,141,Media
 17,tc-3,subset of tc trace that corresponds to web,250,406,Web
 18,eu-mix,mix of eu-0 and eu-1,0.6,91,SocialMedia
+19,v-1,video trace collected from a major video streaming service in a major US metro,1.5,500,Video
+20,v-2,video trace collected from a major video streaming service in a major EU metro,1.5,500,Video
+21,d-1,download trace collected from a major video streaming service in a major US metro,1.5,500,Downloads
+22,d-2,download trace collected from a major video streaming service in a major EU metro,1.5,500,Downloads
+23,w-1,web trace collected from a major video streaming service in a major US metro,1.5,500,Web
+24,w-2,web trace collected from a major video streaming service in a major US metro,1.5,500,Web
