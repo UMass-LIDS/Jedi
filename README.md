@@ -105,6 +105,19 @@ EU-5: Subset of eu trace corresponding to social media traffic [download link](h
 
 EU-7: Subset of eu trace corresponding to web traffic [download link](https://drive.google.com/file/d/15k0WvCysT6ZLaEvWCkD8cEFpdQOFwdQ3/view?usp=sharing).
 
+V-1: Traffic collected from servers in a major US metro predominantly serving video traffic in 2025 [download link](https://drive.google.com/file/d/1j7iT40Tm1n6Vwjq59SsXXLmkppxYWGKn/view?usp=drive_link).
+
+V-2: Traffic collected from servers in a major EU metro predominantly serving video traffic in 2025 [download link](https://drive.google.com/file/d/1ivBkBBwnj7MI636j0HACiunI2ZDrGw7n/view?usp=drive_link).
+
+W-1: Traffic collected from servers in a major US metro predominantly serving web traffic in 2025 [download link](https://drive.google.com/file/d/14H63ERY5fP1faJGXX18D7bSn-zV6l4dP/view?usp=drive_link).
+
+W-2: Traffic collected from servers in a major EU metro predominantly serving web traffic in 2025 [download link](https://drive.google.com/file/d/14fygRkql8gzsC5-7xZkqu2EE0srsnES-/view?usp=sharing).
+
+D-1: Traffic collected from servers in a major US metro predominantly serving download traffic in 2025 [download link](https://drive.google.com/file/d/1dIH66wXO2v5G4FX-_PCURIyehX49nLks/view?usp=sharing).
+
+D-2: Traffic collected from servers in a major EU metro predominantly serving download traffic in 2025 [download link](https://drive.google.com/file/d/1KBYL-0c_xef5xF5hDCz3ntYFYtkH2_ag/view?usp=sharing).
+
+
 
 ## 4. Generate and submit traffic models
 
