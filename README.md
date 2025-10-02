@@ -167,10 +167,10 @@ The currently available traffic models are:
 |17|TC-3|Subset of tc trace that corresponds to web|Web|2015|No|
 |18|V-1|Traffic collected from servers in a major US metro predominantly serving video traffic|Video|2025|Yes|
 |19|V-2|Traffic collected from servers in a major EU metro predominantly serving video traffic|Video|2025|Yes|
-|20|W-1|Traffic collected from servers in a major US metro predominantly serving web traffic|Video|2025|Yes|
-|21|W-2|Traffic collected from servers in a major EU metro predominantly serving web traffic|Video|2025|Yes|
-|22|D-1|Traffic collected from servers in a major US metro predominantly serving download traffic|Video|2025|Yes|
-|23|D-2|Traffic collected from servers in a major EU metro predominantly serving download traffic|Video|2025|Yes|
+|20|W-1|Traffic collected from servers in a major US metro predominantly serving web traffic|Web|2025|Yes|
+|21|W-2|Traffic collected from servers in a major EU metro predominantly serving web traffic|Web|2025|Yes|
+|22|D-1|Traffic collected from servers in a major US metro predominantly serving download traffic|Download|2025|Yes|
+|23|D-2|Traffic collected from servers in a major EU metro predominantly serving download traffic|Download|2025|Yes|
 
 
 ## 7. References
